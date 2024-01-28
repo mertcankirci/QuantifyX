@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		541013352B670A4200A30399 /* ViewOffsetKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541013342B670A4200A30399 /* ViewOffsetKey.swift */; };
+		54B43A3E2B6674FE000E3578 /* KeyboardAwareModif +Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B43A3D2B6674FE000E3578 /* KeyboardAwareModif +Ext.swift */; };
 		54BA7BDD2B61D07900DC96B7 /* View +Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BA7BDC2B61D07900DC96B7 /* View +Ext.swift */; };
+		54D5F0222B630AAC00D3F934 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D5F0212B630AAC00D3F934 /* ListView.swift */; };
+		54D5F0242B6316C700D3F934 /* GetInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D5F0232B6316C700D3F934 /* GetInfoView.swift */; };
 		54E1669F2B6155FB006EDE93 /* QuantifyXApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E1669E2B6155FB006EDE93 /* QuantifyXApp.swift */; };
 		54E166A12B6155FB006EDE93 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E166A02B6155FB006EDE93 /* ContentView.swift */; };
 		54E166A32B6155FE006EDE93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54E166A22B6155FE006EDE93 /* Assets.xcassets */; };
@@ -19,7 +23,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		541013342B670A4200A30399 /* ViewOffsetKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewOffsetKey.swift; sourceTree = "<group>"; };
+		54B43A3D2B6674FE000E3578 /* KeyboardAwareModif +Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeyboardAwareModif +Ext.swift"; sourceTree = "<group>"; };
 		54BA7BDC2B61D07900DC96B7 /* View +Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View +Ext.swift"; sourceTree = "<group>"; };
+		54D5F0212B630AAC00D3F934 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		54D5F0232B6316C700D3F934 /* GetInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetInfoView.swift; sourceTree = "<group>"; };
 		54E1669B2B6155FB006EDE93 /* QuantifyX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuantifyX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54E1669E2B6155FB006EDE93 /* QuantifyXApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuantifyXApp.swift; sourceTree = "<group>"; };
 		54E166A02B6155FB006EDE93 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -42,6 +50,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		541013332B670A3A00A30399 /* UIHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				541013342B670A4200A30399 /* ViewOffsetKey.swift */,
+			);
+			path = UIHelpers;
+			sourceTree = "<group>";
+		};
 		54E166922B6155FB006EDE93 = {
 			isa = PBXGroup;
 			children = (
@@ -91,7 +107,10 @@
 		54E166AD2B6156E5006EDE93 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				541013332B670A3A00A30399 /* UIHelpers */,
 				54E166A02B6155FB006EDE93 /* ContentView.swift */,
+				54D5F0212B630AAC00D3F934 /* ListView.swift */,
+				54D5F0232B6316C700D3F934 /* GetInfoView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -110,6 +129,7 @@
 				54E166B42B615DFF006EDE93 /* Color +Ext.swift */,
 				54E166B62B61602F006EDE93 /* UIScreen +Ext.swift */,
 				54BA7BDC2B61D07900DC96B7 /* View +Ext.swift */,
+				54B43A3D2B6674FE000E3578 /* KeyboardAwareModif +Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -184,11 +204,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54D5F0222B630AAC00D3F934 /* ListView.swift in Sources */,
 				54E166B72B61602F006EDE93 /* UIScreen +Ext.swift in Sources */,
 				54E166B52B615DFF006EDE93 /* Color +Ext.swift in Sources */,
+				541013352B670A4200A30399 /* ViewOffsetKey.swift in Sources */,
 				54E166A12B6155FB006EDE93 /* ContentView.swift in Sources */,
 				54E166B32B615759006EDE93 /* MalzemeModel.swift in Sources */,
 				54E1669F2B6155FB006EDE93 /* QuantifyXApp.swift in Sources */,
+				54D5F0242B6316C700D3F934 /* GetInfoView.swift in Sources */,
+				54B43A3E2B6674FE000E3578 /* KeyboardAwareModif +Ext.swift in Sources */,
 				54E166B12B615710006EDE93 /* HomePageViewModel.swift in Sources */,
 				54BA7BDD2B61D07900DC96B7 /* View +Ext.swift in Sources */,
 			);

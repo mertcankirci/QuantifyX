@@ -350,5 +350,25 @@ class HomePageViewModel: ObservableObject {
         }
     }
     
+    @MainActor
+    func calculateAmount(ingredient: Ingredient, amount: Int, desiredType: String) -> Int? {
+
+        switch desiredType {
+        case "suBardagi":
+            return ingredient.olculer.suBardagi.map { amount / $0 }
+        case "cayBardagi":
+            return ingredient.olculer.cayBardagi.map { amount / $0 }
+        case "yemekKasigi":
+            return ingredient.olculer.yemekKasigi.map { amount / $0 }
+        case "tatliKasigi":
+            return ingredient.olculer.tatliKasigi.map { amount / $0 }
+        case "cayKasigi":
+            return ingredient.olculer.cayKasigi.map { amount / $0 }
+        default:
+            return nil 
+        }
+        
+    }
+    
     
 }
